@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab1-班号-学号后3位-index</title>
+    <style>
+        /* 任务7-8：样式补充，满足图片排版与留白要求 */
+        .img-container {
+            /* 任务8要求：div作为容器，宽高220px */
+            width: 220px;
+            height: 220px;
+            /* 任务8要求：左边留出50px空白 */
+            margin-left: 50px;
+            /* 图片均匀横排，使用flex布局保证对齐 */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .img-container img {
+            width: 100px; /* 控制图片大小，适配容器 */
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <!-- 任务2(1)：一级标题 -->
+    <h1>美丽校园—春华</h1>
+    
+    <!-- 任务2(2)：二级标题-作者信息 -->
+    <h2>作者：鲁东大学 计算机专业 学生</h2>
+
+    <!-- 任务2(2)：水平线分割 -->
+    <hr>
+
+    <!-- 任务2(3)：三级标题-自然风光 -->
+    <h3 id="natural-scenery">自然风光</h3>
+
+    <!-- 任务2(4)：散文体介绍，使用p标签换行，每段不少于300字 -->
+    <p>
+        春华校区的清晨，总是被第一缕暖阳唤醒。漫步在贯穿校园的林荫大道上，两侧的香樟树叶随着微风轻拂，沙沙作响，仿佛在低声诉说着岁月的故事。那片澄澈的人工湖，是校园最灵动的眼眸，湖水清澈见底，倒映着蓝天白云，偶尔有几只白鹭掠过水面，激起一圈圈涟漪。湖畔的草坪上，总是坐着晨读的同学或是嬉戏的孩童，阳光洒在他们身上，勾勒出一幅温暖又治愈的画面。这里的四季有着截然不同的韵味，春天是繁花似锦的娇艳，夏天是浓荫蔽日的清凉，秋天是落叶纷飞的诗意，冬天是银装素裹的静谧，每一次驻足，都能让人感受到校园独有的生机与柔情。
+    </p>
+    <p>
+        沿着湖边小径前行，会遇见一片错落有致的花坛，四季花卉轮番绽放，色彩斑斓。校园深处的小山坡，更是俯瞰整个校区的绝佳位置。登高望远，红砖绿瓦的教学楼与现代化的实验楼错落有致，操场上奔跑的身影充满了活力，这一切都构成了春华校区最鲜活的底色。在这里，自然与人文和谐共生，每一块石头、每一株草木都承载着记忆，让人不禁沉醉于这方水土的温柔与辽阔之中。
+    </p>
+
+    <!-- 任务2(5)：三级标题-人文景观 -->
+    <h3 id="human-landscape">人文景观</h3>
+
+    <!-- 任务2(6)：无序列表，至少3个名称 -->
+    <ul>
+        <li>校史陈列馆</li>
+        <li>春华广场</li>
+        <li>图书馆阅览区</li>
+        <li>创新创业中心</li>
+    </ul>
+
+    <!-- 任务2(7)：超链接跳转 -->
+    <p>
+        点击查看：<a href="#natural-scenery">返回自然风光</a> | <a href="#human-landscape">查看人文景观</a>
+    </p>
+
+    <!-- 任务2(8)：div容器嵌入图片，至少3张 -->
+    <div class="img-container">
+        <img src="https://picsum.photos/seed/campus1/200/200" alt="校园风光1">
+        <img src="https://picsum.photos/seed/campus2/200/200" alt="校园风光2">
+        <img src="https://picsum.photos/seed/campus3/200/200" alt="校园风光3">
+    </div>
+
+</body>
+</html>
